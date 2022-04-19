@@ -13,7 +13,7 @@ import { useState } from "react";
 import { useStoreActions } from "easy-peasy";
 
 export function SearchForm() {
-  const apiKey = "";
+  const apiKey = process.env.API_KEY;
   const [arg, setArg] = useState("");
   const setUserData = useStoreActions((actions) => actions.updateUserData);
 
