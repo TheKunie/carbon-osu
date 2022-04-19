@@ -26,6 +26,7 @@ export function SearchForm() {
         setUserData(res.data[0]);
         console.log(res);
       });
+    console.log(apiKey);
   };
 
   return (
